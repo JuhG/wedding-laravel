@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'Magenta';
+    src: url('../fonts/Magenta.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-base font-light text-pri-500;
+}
+
+.dd-magenta {
+    font-family: 'Magenta', cursive;
+}
+
+p,
+blockquote {
+    @apply leading-normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @apply text-base leading-normal;
+}
+
+.dd-editor {
+    a {
+        @apply text-sec-500;
+
+        &:hover {
+            @apply text-sec-600;
+        }
+    }
+
+    p+p,
+    h1+p,
+    h2+p {
+        @apply mt-4;
+    }
+}
+
+.dd-input {
+    @apply bg-gray-200 rounded px-3 py-2;
+}
+
+.dd-input-white {
+    @apply bg-white rounded px-3 py-2;
+}
+
+.dd-container {
+    @apply max-w-4xl mx-auto px-container;
+}
+
+.dd-button {
+    @apply rounded p-2 w-full max-w-button cursor-pointer;
+}
+
+.dd-button-pri {
+    @apply bg-sec-500 text-white;
+
+    &:hover {
+        @apply bg-sec-600;
+    }
+}
+
+.dd-button-sec {
+    @apply bg-pri-500 text-white;
+
+    &:hover {
+        @apply bg-pri-600;
+    }
+}
+
+.dd-button-outline-sec {
+    @apply border-pri-500 border text-pri-500;
+
+    &:hover {
+        @apply border-pri-300 bg-pri-300 text-white;
+    }
+}
+
+.dd-size-2 {
+    @apply text-2xl;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+$size: 5vw;
+
+.dd-block {
+    padding-top: $size;
+    padding-bottom: $size;
+}
+
+.dd-block-color {
+    @apply text-dark-500;
+    background: rgba(#4ca7ac, .1);
+    margin-top: $size * 1.5;
+    margin-bottom: $size * 1.5;
+}
+
+.dd-block-right {
+    @apply dd-block-color;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -$size;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 $size 100vw;
+        border-color: transparent transparent rgba(#4ca7ac, .1) transparent;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -$size;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 100vw $size 0;
+        border-color: transparent rgba(#4ca7ac, .1) transparent transparent;
+    }
+}
+
+.dd-block-left {
+    @apply dd-block-color;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: -$size;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size 0 0 100vw;
+        border-color: transparent transparent transparent rgba(#4ca7ac, .1);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -$size;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: $size 100vw 0 0;
+        border-color: rgba(#4ca7ac, .1) transparent transparent transparent;
+    }
+}
+
+.dd-shadow {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 6rem;
+        // box-shadow: inset -5rem 0 25px 0px #fff;
+        pointer-events: none;
+        background: linear-gradient(to right, rgba(#fff, .2) 0%, #fff 100%);
+    }
+}
+
+.dd-title {
+    @apply font-medium text-xl;
+}
+
+.dd-svg {
+    @apply w-10 h-10 p-1 mr-4;
+
+    path {
+        fill: #d39e40;
+        stroke: #d39e40;
+        stroke-width: 3px;
+    }
+}
