@@ -27,7 +27,7 @@
 
         <div sticky-container>
 
-            <div id="menu" class="h-12 md:h-20 bg-white-opa dd-shadow mb-12 mt-8 md:mt-0" v-sticky sticky-side="top">
+            <div id="menu" class="h-12 md:h-20 bg-white-opa dd-shadow mb-12 md:mt-0" v-sticky sticky-side="top">
                 <div
                     class="w-screen overflow-x-scroll md:overflow-auto h-full flex md:justify-center items-center md:text-xl">
                     <a class="p-3 md:p-5" href="#program" v-scroll-to="'#program'">Program</a>
