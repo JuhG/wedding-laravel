@@ -222,6 +222,15 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzW4ToV0Ugomm7VIXqXRpT_xRSlm8OWBg&callback=initMap">
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105361191-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-105361191-4');
+    </script>
 </body>
 
 </html>
