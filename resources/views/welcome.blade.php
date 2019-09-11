@@ -223,29 +223,26 @@
                 </div>
 
                 <div class="mt-16 dd-container dd-editor flex items-center flex-col md:flex-row">
-                    <img class="md:flex-1 md:h-full md:w-1/2 rounded-lg" src="/img/hangulat.jpg"
-                        alt="Alexandra és Gábor">
-
-                    <div class="flex-1 mt-8 md:mt-0 md:ml-8">
+                    <div class="flex-1 mb-16 md:mb-0 md:ml-8">
                         <p><strong>Hangulat</strong></p>
-                        <p>
-
-                            <a target="_blank"
+                        <p class="max-w-screen overflow-hidden">
+                            <a target="_blank" class="break-all"
                                 href="https://photos.app.goo.gl/MCfwLLSBMUokTUN39">https://photos.app.goo.gl/MCfwLLSBMUokTUN39</a>
                         </p>
                         <p><strong>Összes</strong></p>
-                        <p>
-
-                            <a target="_blank"
+                        <p class="max-w-screen overflow-hidden">
+                            <a target="_blank" class="break-all"
                                 href="https://photos.app.goo.gl/F2Pjtc2M1yVboNsX6">https://photos.app.goo.gl/F2Pjtc2M1yVboNsX6</a>
                         </p>
                         <p><strong>Emberek</strong></p>
-                        <p>
-
-                            <a target="_blank"
+                        <p class="max-w-screen overflow-hidden">
+                            <a target="_blank" class="break-all"
                                 href="https://photos.app.goo.gl/YXYWEyErBeh8AHcG7">https://photos.app.goo.gl/YXYWEyErBeh8AHcG7</a>
                         </p>
                     </div>
+
+                    <img class="md:flex-1 md:h-full md:w-1/2 rounded-lg md:order-first" src="/img/hangulat.jpg"
+                        alt="Alexandra és Gábor">
                 </div>
             </div>
 
