@@ -51,7 +51,7 @@
                     <a class="p-3 md:p-5" href="#program" v-scroll-to="'#program'">Program</a>
                     <a class="p-3 md:p-5" href="#rsvp" v-scroll-to="'#rsvp'">Visszajelzés</a>
                     <a class="p-3 md:p-5" href="#hotels" v-scroll-to="'#hotels'">Szállás</a>
-                    <a class="p-3 md:p-5" href="#pictures" v-scroll-to="'#pictures'">Képek</a>
+                    <a class="p-3 md:p-5" href="#kepek" v-scroll-to="'#kepek'">Képek</a>
                     <a class="p-3 pr-20 md:p-5" href="#music" v-scroll-to="'#music'">Zene</a>
                 </div>
             </div>
@@ -202,15 +202,51 @@
                 </div>
             </div>
 
-            <div id="pictures" class="dd-block dd-block-left">
-                <div class="dd-container dd-editor mb-12">
-                    <h2 class="dd-title">Képek</h2>
-                    <p>
-                        Amint megkapjuk, ide fogjuk feltölteni az esküvői fotókat. Legalábbis a vállalhatóakat...
-                        Ha biztosra akarsz menni, akkor írd ide az e-mail címed és küldjük is.
-                    </p>
+            <div id="kepek" class="dd-block dd-block-left">
+                <div class="dd-container dd-editor flex items-center flex-col md:flex-row">
+                    <div class="flex-1 mb-8 md:mb-0 md:mr-8">
+                        <h2 class="dd-title">Képek</h2>
+                        <p>
+                            Megérkeztek a várva-várt fotók!
+                            Mappákba rendeztük őket, hogy talán könnyebb legyen átlátni.
+                        </p>
+                        <p>
+                            Az első mappában éppen csak néhány kép van, hogy a hangulatot valamennyire átadja.
+                            A másodikban minden egyes jó kép benne van, ez a hosszú lista.
+                            A harmadikba pedig válogatás nélkül beraktunk minden embert
+                            ábrázoló képet, hogy mindenki bogarászhasson, hátha talál magáról jót. :)
+                        </p>
+                    </div>
+
+                    <img class="md:flex-1 md:h-full md:w-1/2 rounded-lg" src="/img/fotozas.jpg"
+                        alt="Alexandra és Gábor">
                 </div>
-                @include('includes/form')
+
+                <div class="mt-16 dd-container dd-editor flex items-center flex-col md:flex-row">
+                    <img class="md:flex-1 md:h-full md:w-1/2 rounded-lg" src="/img/hangulat.jpg"
+                        alt="Alexandra és Gábor">
+
+                    <div class="flex-1 mt-8 md:mt-0 md:ml-8">
+                        <p><strong>Hangulat</strong></p>
+                        <p>
+
+                            <a target="_blank"
+                                href="https://photos.app.goo.gl/MCfwLLSBMUokTUN39">https://photos.app.goo.gl/MCfwLLSBMUokTUN39</a>
+                        </p>
+                        <p><strong>Összes</strong></p>
+                        <p>
+
+                            <a target="_blank"
+                                href="https://photos.app.goo.gl/F2Pjtc2M1yVboNsX6">https://photos.app.goo.gl/F2Pjtc2M1yVboNsX6</a>
+                        </p>
+                        <p><strong>Emberek</strong></p>
+                        <p>
+
+                            <a target="_blank"
+                                href="https://photos.app.goo.gl/YXYWEyErBeh8AHcG7">https://photos.app.goo.gl/YXYWEyErBeh8AHcG7</a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <div id="music" class="dd-block">
